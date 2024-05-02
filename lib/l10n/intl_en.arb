@@ -4,6 +4,7 @@
   "message": "Message",
   "no_internet_subtext": "We apologise for the inconvenience,\nplease check your internet connection",
   "retry": "Retry",
-  "no_internet": "No Internet connection"
+  "no_internet": "No Internet connection",
+
 
 }
