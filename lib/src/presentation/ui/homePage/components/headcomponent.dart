@@ -47,7 +47,8 @@ class _HeadComponentState extends State<HeadComponent> {
               ],
             ),
             mainTextComponent(widget.deviceType),
-            Assets.images.icMobileHome.image(width: MediaQuery.of(context).size.width,fit: BoxFit.cover)
+            Assets.images.icMobileHome
+                .image(width: MediaQuery.of(context).size.width, fit: BoxFit.cover)
           ],
         );
       },
@@ -66,8 +67,6 @@ class _HeadComponentState extends State<HeadComponent> {
                   height: 40,
                 ),
                 webAppBar(appBarText),
-
-
                 Row(
                   children: [
                     SizedBox(
@@ -250,8 +249,12 @@ class _HeadComponentState extends State<HeadComponent> {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          deviceType == DeviceScreenType.mobile?const SizedBox(): gradientText(deviceType),
-          deviceType == DeviceScreenType.mobile?const SizedBox():const SizedBox(height: 10,),
+          deviceType == DeviceScreenType.mobile ? const SizedBox() : gradientText(deviceType),
+          deviceType == DeviceScreenType.mobile
+              ? const SizedBox()
+              : const SizedBox(
+                  height: 10,
+                ),
           Text(
             text.home_main_text,
             style: Theme.of(context).textTheme.bodyLarge?.copyWith(
@@ -279,14 +282,12 @@ class _HeadComponentState extends State<HeadComponent> {
             height: 40,
           ),
           Container(
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(52),
-                boxShadow:  [
-                  BoxShadow(
-                      color: ColorName.buttonColor.withOpacity(0.25),
-                      blurRadius: 25,
-                      offset: const Offset(0, 15))
-                ]),
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(52), boxShadow: [
+              BoxShadow(
+                  color: ColorName.buttonColor.withOpacity(0.25),
+                  blurRadius: 25,
+                  offset: const Offset(0, 15))
+            ]),
             child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     backgroundColor: ColorName.buttonColor,
