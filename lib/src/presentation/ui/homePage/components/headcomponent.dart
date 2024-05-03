@@ -47,8 +47,38 @@ class _HeadComponentState extends State<HeadComponent> {
               ],
             ),
             mainTextComponent(widget.deviceType),
-            Assets.images.icMobileHome
-                .image(width: MediaQuery.of(context).size.width, fit: BoxFit.cover)
+            Stack(
+              children: [
+                Assets.images.icMobileHome
+                    .image(width: MediaQuery.of(context).size.width, fit: BoxFit.cover),
+                Padding(
+                  padding: const EdgeInsets.only(left: 23.0, top: 40),
+                  child: Container(
+                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(52), boxShadow: [
+                      BoxShadow(
+                          color: ColorName.buttonColor.withOpacity(0.25),
+                          blurRadius: 25,
+                          offset: const Offset(0, 15))
+                    ]),
+                    child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                            backgroundColor: ColorName.buttonColor,
+                            shape:
+                                RoundedRectangleBorder(borderRadius: BorderRadius.circular(52.0)),
+                            minimumSize: const Size(150, 60)),
+                        onPressed: () {},
+                        child: Text(
+                          text.learn_more,
+                          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                              fontFamily: FontFamily.gothic,
+                              color: ColorName.white,
+                              fontWeight: FontWeight.w400,
+                              fontSize: 14),
+                        )),
+                  ),
+                )
+              ],
+            )
           ],
         );
       },
@@ -233,8 +263,8 @@ class _HeadComponentState extends State<HeadComponent> {
           fontWeight: FontWeight.w700,
           fontSize: deviceType == DeviceScreenType.mobile ? 14 : 16),
       colors: const [
-        ColorName.gradientTextShade1,
         ColorName.gradientTextShade2,
+        ColorName.gradientTextShade1,
       ],
     );
   }
@@ -278,31 +308,35 @@ class _HeadComponentState extends State<HeadComponent> {
                   letterSpacing: 2,
                 ),
           ),
-          const SizedBox(
-            height: 40,
-          ),
-          Container(
-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(52), boxShadow: [
-              BoxShadow(
-                  color: ColorName.buttonColor.withOpacity(0.25),
-                  blurRadius: 25,
-                  offset: const Offset(0, 15))
-            ]),
-            child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: ColorName.buttonColor,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(52.0)),
-                    minimumSize: const Size(150, 60)),
-                onPressed: () {},
-                child: Text(
-                  text.learn_more,
-                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      fontFamily: FontFamily.gothic,
-                      color: ColorName.white,
-                      fontWeight: FontWeight.w400,
-                      fontSize: 14),
-                )),
-          )
+          deviceType == DeviceScreenType.mobile
+              ? const SizedBox()
+              : const SizedBox(
+                  height: 40,
+                ),
+          deviceType == DeviceScreenType.mobile
+              ? const SizedBox()
+              : Container(
+                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(52), boxShadow: [
+                    BoxShadow(
+                        color: ColorName.buttonColor.withOpacity(0.25),
+                        blurRadius: 25,
+                        offset: const Offset(0, 15))
+                  ]),
+                  child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: ColorName.buttonColor,
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(52.0)),
+                          minimumSize: const Size(150, 60)),
+                      onPressed: () {},
+                      child: Text(
+                        text.learn_more,
+                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                            fontFamily: FontFamily.gothic,
+                            color: ColorName.white,
+                            fontWeight: FontWeight.w400,
+                            fontSize: 14),
+                      )),
+                )
         ],
       ),
     );
