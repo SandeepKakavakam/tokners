@@ -109,6 +109,136 @@ class LanguageTranslation {
       args: [],
     );
   }
+
+  /// `Tokners`
+  String get tokner {
+    return Intl.message(
+      'Tokners',
+      name: 'tokner',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Our team`
+  String get our_team {
+    return Intl.message(
+      'Our team',
+      name: 'our_team',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tokens`
+  String get tokens {
+    return Intl.message(
+      'Tokens',
+      name: 'tokens',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Connect wallet`
+  String get connect_wallet {
+    return Intl.message(
+      'Connect wallet',
+      name: 'connect_wallet',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Lightpaper`
+  String get lightpaper {
+    return Intl.message(
+      'Lightpaper',
+      name: 'lightpaper',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign In`
+  String get sign_in {
+    return Intl.message(
+      'Sign In',
+      name: 'sign_in',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign Up`
+  String get sign_up {
+    return Intl.message(
+      'Sign Up',
+      name: 'sign_up',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `At Tokners we are`
+  String get at_tokners_we_are {
+    return Intl.message(
+      'At Tokners we are',
+      name: 'at_tokners_we_are',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reimagining social media through the power of the blockchain.`
+  String get home_main_text {
+    return Intl.message(
+      'Reimagining social media through the power of the blockchain.',
+      name: 'home_main_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We are creating social media 3.0 with influencers, celebrities and creators being able to launch their own digital currency by simply creating a profile with media content posted as Non fungible Tokens that can be owned and traded on the Tknrs network`
+  String get home_main_description {
+    return Intl.message(
+      'We are creating social media 3.0 with influencers, celebrities and creators being able to launch their own digital currency by simply creating a profile with media content posted as Non fungible Tokens that can be owned and traded on the Tknrs network',
+      name: 'home_main_description',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Learn More`
+  String get learn_more {
+    return Intl.message(
+      'Learn More',
+      name: 'learn_more',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Creators can gain independence through a decentralised digital currency system that is dependent on growing and engaging with the community and also their star power. They own 10-15% of the total value of the tokens minted.`
+  String get creator_text {
+    return Intl.message(
+      'Creators can gain independence through a decentralised digital currency system that is dependent on growing and engaging with the community and also their star power. They own 10-15% of the total value of the tokens minted.',
+      name: 'creator_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Holding social tokens allows the individual to gain access to benefits including unreleased content, private communities, direct access to celebrity, early- access to tickets and more as well as the ability to trade with other communities in order to gain access to more creator content with early token buyers being the biggest winners as the value of the token increases with more buyers.`
+  String get holder_text {
+    return Intl.message(
+      'Holding social tokens allows the individual to gain access to benefits including unreleased content, private communities, direct access to celebrity, early- access to tickets and more as well as the ability to trade with other communities in order to gain access to more creator content with early token buyers being the biggest winners as the value of the token increases with more buyers.',
+      name: 'holder_text',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate
