@@ -12,6 +12,12 @@ import 'package:flutter/widgets.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/ic_bg.png
+  AssetGenImage get icBg => const AssetGenImage('assets/images/ic_bg.png');
+
+  /// File path: assets/images/ic_bg_mobile.png
+  AssetGenImage get icBgMobile => const AssetGenImage('assets/images/ic_bg_mobile.png');
+
   /// File path: assets/images/ic_creator_ellipse.png
   AssetGenImage get icCreatorEllipse => const AssetGenImage('assets/images/ic_creator_ellipse.png');
 
@@ -24,6 +30,9 @@ class $AssetsImagesGen {
   /// File path: assets/images/ic_holder_icon.png
   AssetGenImage get icHolderIcon => const AssetGenImage('assets/images/ic_holder_icon.png');
 
+  /// File path: assets/images/ic_logo.png
+  AssetGenImage get icLogo => const AssetGenImage('assets/images/ic_logo.png');
+
   /// File path: assets/images/ic_logo_main.png
   AssetGenImage get icLogoMain => const AssetGenImage('assets/images/ic_logo_main.png');
 
@@ -32,6 +41,9 @@ class $AssetsImagesGen {
 
   /// File path: assets/images/ic_mobile_arc.png
   AssetGenImage get icMobileArc => const AssetGenImage('assets/images/ic_mobile_arc.png');
+
+  /// File path: assets/images/ic_mobile_home.png
+  AssetGenImage get icMobileHome => const AssetGenImage('assets/images/ic_mobile_home.png');
 
   /// File path: assets/images/ic_mobile_white_arc.png
   AssetGenImage get icMobileWhiteArc => const AssetGenImage('assets/images/ic_mobile_white_arc.png');
@@ -47,13 +59,17 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
+        icBg,
+        icBgMobile,
         icCreatorEllipse,
         icCreatorIcon,
         icHolderEllipse,
         icHolderIcon,
+        icLogo,
         icLogoMain,
         icMenuMobile,
         icMobileArc,
+        icMobileHome,
         icMobileWhiteArc,
         icWebArc,
         icWebHome,

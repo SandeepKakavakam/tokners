@@ -10,12 +10,12 @@ import 'package:shared/shared.dart';
 import '../../../../main.dart';
 import '../../../../route/app_router.dart';
 import '../../app/bloc/app_bloc.dart';
-import '../../theme/color_theme.dart';
+
 import '../../theme/theme_manager.dart';
 import '../../widget/dialogue/loading_dialog.dart';
 import '../../widget/dialogue/gobal_dialog.dart';
-import '../../widget/error_states/no_internet.dart';
-import '../../widget/touch_effect.dart';
+
+
 import '../bloc/base_bloc.dart';
 import '../common/common_bloc.dart';
 import '../common/common_event.dart';
