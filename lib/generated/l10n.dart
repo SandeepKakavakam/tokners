@@ -320,6 +320,56 @@ class LanguageTranslation {
     );
   }
 
+  /// `Reimagining social media through the power of the blockchain.`
+  String get title_text {
+    return Intl.message(
+      'Reimagining social media through the power of the blockchain.',
+      name: 'title_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We are creating social media 3.0 with influencers, celebrities and creators being able to launch their own digital currency by simply creating a profile with media content posted as Non fungible Tokens that can be owned and traded on the Tknrs network`
+  String get cover_description {
+    return Intl.message(
+      'We are creating social media 3.0 with influencers, celebrities and creators being able to launch their own digital currency by simply creating a profile with media content posted as Non fungible Tokens that can be owned and traded on the Tknrs network',
+      name: 'cover_description',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Presale Details`
+  String get presale_details {
+    return Intl.message(
+      'Presale Details',
+      name: 'presale_details',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Soft cap: `
+  String get soft_cap {
+    return Intl.message(
+      'Soft cap: ',
+      name: 'soft_cap',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hard cap: `
+  String get hard_cap {
+    return Intl.message(
+      'Hard cap: ',
+      name: 'hard_cap',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `What makes us different?\n\n`
   String get white_container_question {
     return Intl.message(

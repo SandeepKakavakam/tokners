@@ -16,6 +16,7 @@ dependencies:
   equatable: ^2.0.5
   responsive_builder: ^0.7.0
   simple_gradient_text: ^1.3.0
+  smooth_page_indicator: ^1.1.0
   # Resource localizations
   flutter_localizations:
     sdk: flutter
@@ -53,6 +54,7 @@ dependencies:
   freezed_annotation: ^2.0.3
   enum_to_string: ^2.0.1
   connectivity_plus: ^5.0.1
+
 
   data:
     path: ./module/data

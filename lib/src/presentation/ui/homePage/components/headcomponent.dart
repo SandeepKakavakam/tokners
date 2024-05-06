@@ -27,7 +27,7 @@ class _HeadComponentState extends State<HeadComponent> {
               children: [
                 Align(
                   alignment: Alignment.topCenter,
-                  child: Assets.images.icBgMobile.image(
+                  child: Assets.images.imgBgMobile.image(
                       height: 150, width: MediaQuery.of(context).size.width, fit: BoxFit.cover),
                 ),
                 Column(
@@ -49,7 +49,7 @@ class _HeadComponentState extends State<HeadComponent> {
             mainTextComponent(widget.deviceType),
             Stack(
               children: [
-                Assets.images.icMobileHome
+                Assets.images.imgMobileHome
                     .image(width: MediaQuery.of(context).size.width, fit: BoxFit.cover),
                 Padding(
                   padding: const EdgeInsets.only(left: 23.0, top: 40),
@@ -87,7 +87,7 @@ class _HeadComponentState extends State<HeadComponent> {
           children: [
             Align(
                 alignment: Alignment.topRight,
-                child: Assets.images.icBg
+                child: Assets.images.imgBg
                     .image(width: MediaQuery.of(context).size.width, fit: BoxFit.cover)),
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -102,7 +102,7 @@ class _HeadComponentState extends State<HeadComponent> {
                     SizedBox(
                         width: MediaQuery.of(context).size.width * 0.45,
                         child: mainTextComponent(widget.deviceType)),
-                    Assets.images.icWebHome.image(
+                    Assets.images.imgWebHome.image(
                         width: MediaQuery.of(context).size.width * 0.55,
                         height: 650,
                         fit: BoxFit.fill)
@@ -124,7 +124,7 @@ class _HeadComponentState extends State<HeadComponent> {
           const SizedBox(
             width: 20,
           ),
-          Assets.images.icLogo.image(height: 25, width: 155),
+          Assets.images.imgLogo.image(height: 25, width: 155),
           const Spacer(),
           MenuAnchor(
             builder: (BuildContext context, MenuController controller, Widget? child) {
@@ -136,7 +136,7 @@ class _HeadComponentState extends State<HeadComponent> {
                     controller.open();
                   }
                 },
-                icon: Assets.images.icMenuMobile.image(height: 24, width: 24),
+                icon: Assets.images.imgMenuMobile.image(height: 24, width: 24),
                 // tooltip: 'Show menu',
               );
             },
@@ -173,7 +173,7 @@ class _HeadComponentState extends State<HeadComponent> {
         const SizedBox(
           width: 40,
         ),
-        Assets.images.icLogo.image(height: 25, width: 155),
+        Assets.images.imgLogo.image(height: 25, width: 155),
         const SizedBox(
           width: 40,
         ),

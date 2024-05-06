@@ -26,6 +26,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("At Tokners we are"),
         "connect_wallet":
             MessageLookupByLibrary.simpleMessage("Connect wallet"),
+        "cover_description": MessageLookupByLibrary.simpleMessage(
+            "We are creating social media 3.0 with influencers, celebrities and creators being able to launch their own digital currency by simply creating a profile with media content posted as Non fungible Tokens that can be owned and traded on the Tknrs network"),
         "description_1": MessageLookupByLibrary.simpleMessage(
             "Cryptocurrency adoption is at less than 1% of the global world population with some countries and entities actively fighting against its mass adoption and the smartest developers and nerds holding the fort."),
         "description_2": MessageLookupByLibrary.simpleMessage(
@@ -43,6 +45,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "error": MessageLookupByLibrary.simpleMessage("api error"),
         "footer_cp": MessageLookupByLibrary.simpleMessage(
             "© 2021 Tokners. All rights reserved."),
+        "hard_cap": MessageLookupByLibrary.simpleMessage("Hard cap: "),
         "hide": MessageLookupByLibrary.simpleMessage("Hide"),
         "home_main_description": MessageLookupByLibrary.simpleMessage(
             "We are creating social media 3.0 with influencers, celebrities and creators being able to launch their own digital currency by simply creating a profile with media content posted as Non fungible Tokens that can be owned and traded on the Tknrs network"),
@@ -57,10 +60,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "no_internet_subtext": MessageLookupByLibrary.simpleMessage(
             "We apologise for the inconvenience,\nplease check your internet connection"),
         "our_team": MessageLookupByLibrary.simpleMessage("Our team"),
+        "presale_details":
+            MessageLookupByLibrary.simpleMessage("Presale Details"),
         "read_more": MessageLookupByLibrary.simpleMessage("Read More"),
         "retry": MessageLookupByLibrary.simpleMessage("Retry"),
         "sign_in": MessageLookupByLibrary.simpleMessage("Sign In"),
         "sign_up": MessageLookupByLibrary.simpleMessage("Sign Up"),
+        "soft_cap": MessageLookupByLibrary.simpleMessage("Soft cap: "),
+        "title_text": MessageLookupByLibrary.simpleMessage(
+            "Reimagining social media through the power of the blockchain."),
         "tokens": MessageLookupByLibrary.simpleMessage("Tokens"),
         "tokner": MessageLookupByLibrary.simpleMessage("Tokners"),
         "tokner_is_coming":

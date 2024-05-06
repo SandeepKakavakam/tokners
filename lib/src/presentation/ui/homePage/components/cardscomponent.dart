@@ -18,13 +18,13 @@ class _HomeCardsComponentState extends State<HomeCardsComponent> {
         title: "Creators",
         description:
             "Creators can gain independence through a decentralised digital currency system that is dependent on growing and engaging with the community and also their star power. They own 10-15% of the total value of the tokens minted.",
-        icon: Assets.images.icCreatorIcon.image(height: 4, width: 4),
+        icon: Assets.images.imgCreatorIcon.image(height: 4, width: 4),
         color: ColorName.buttonColor),
     CardModel(
         title: "Holders",
         description:
             "Holding social tokens allows the individual to gain access to benefits including unreleased content, private communities, direct access to celebrity, early- access to tickets and more as well as the ability to trade with other communities in order to gain access to more creator content with early token buyers being the biggest winners as the value of the token increases with more buyers.",
-        icon: Assets.images.icHolderIcon.image(height: 4, width: 4),
+        icon: Assets.images.imgHolderIcon.image(height: 4, width: 4),
         color: ColorName.mentorColor),
   ];
   @override
@@ -39,7 +39,7 @@ class _HomeCardsComponentState extends State<HomeCardsComponent> {
             const SizedBox(
               height: 60,
             ),
-            Assets.images.icMobileArc
+            Assets.images.imgMobileArc
                 .image(width: MediaQuery.of(context).size.width, fit: BoxFit.fill),
             whiteContainer(widget.deviceType)
           ],
@@ -59,8 +59,8 @@ class _HomeCardsComponentState extends State<HomeCardsComponent> {
             ),
             Row(
               children: [
-                Assets.images.icWebArc
-                    .image(width: MediaQuery.of(context).size.width * 0.5, fit: BoxFit.fill),
+                Assets.images.imgWebArc
+                    .image(height: MediaQuery.of(context).size.height*0.9,width: MediaQuery.of(context).size.width * 0.5, fit: BoxFit.fill),
                 whiteContainer(widget.deviceType),
                 const SizedBox(
                   height: 50,
@@ -299,7 +299,7 @@ class _HomeCardsComponentState extends State<HomeCardsComponent> {
         color: ColorName.white,
         borderRadius: BorderRadius.only(
             topLeft: Radius.circular(deviceType == DeviceScreenType.desktop ? 300.0 : 0),
-            topRight: Radius.circular(deviceType == DeviceScreenType.mobile ? 300.0 : 0)),
+            topRight: Radius.circular(deviceType == DeviceScreenType.mobile || deviceType == DeviceScreenType.tablet ? 300.0 : 0)),
       ),
       child: Padding(
         padding: EdgeInsets.only(

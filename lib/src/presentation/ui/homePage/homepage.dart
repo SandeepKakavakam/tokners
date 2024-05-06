@@ -8,6 +8,7 @@ import 'components/cardscomponent.dart';
 import 'components/comingcomponent.dart';
 import 'components/footercomponent.dart';
 import 'components/headcomponent.dart';
+import 'components/presalecomponet.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -32,6 +33,7 @@ class _HomepageState extends BasePageState<Homepage, HomePageBloc> {
           HomeToknerComponent(
             deviceType: deviceType,
           ),
+          const PresaleDetails(),
           HomeFooterComponent(deviceType: deviceType)
         ],
       )),

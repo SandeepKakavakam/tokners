@@ -41,7 +41,7 @@ class _HomeToknerComponentState extends BasePageState<HomeToknerComponent, HomeP
                         color: ColorName.color171B29, borderRadius: BorderRadius.circular(12)),
                   ),
                 ),
-                Assets.images.icTokenComing.image(
+                Assets.images.imgTokenComing.image(
                     width: MediaQuery.of(context).size.width * 0.9,
                     height: MediaQuery.of(context).size.width * 0.7,
                     fit: BoxFit.fill),
@@ -82,7 +82,7 @@ class _HomeToknerComponentState extends BasePageState<HomeToknerComponent, HomeP
                                 borderRadius: BorderRadius.circular(12)),
                           ),
                         ),
-                        Assets.images.icTokenComing.image(
+                        Assets.images.imgTokenComing.image(
                             width: MediaQuery.of(context).size.width * 0.5,
                             height: MediaQuery.of(context).size.width * 0.7,
                             fit: BoxFit.fill),
@@ -267,7 +267,7 @@ class _HomeToknerComponentState extends BasePageState<HomeToknerComponent, HomeP
             children: [
               Row(
                 children: [
-                  Assets.images.icLogoMain.image(width: 53, height: 38),
+                  Assets.images.imgLogoMain.image(width: 53, height: 38),
                   const SizedBox(width: 8),
                   SizedBox(
                     width: deviceScreenType == DeviceScreenType.mobile

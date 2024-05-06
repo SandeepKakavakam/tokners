@@ -12,80 +12,100 @@ import 'package:flutter/widgets.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
-  /// File path: assets/images/ic_bg.png
-  AssetGenImage get icBg => const AssetGenImage('assets/images/ic_bg.png');
+  /// File path: assets/images/desktop_presale.png
+  AssetGenImage get desktopPresale => const AssetGenImage('assets/images/desktop_presale.png');
 
-  /// File path: assets/images/ic_bg_mobile.png
-  AssetGenImage get icBgMobile => const AssetGenImage('assets/images/ic_bg_mobile.png');
+  /// File path: assets/images/img_bg.png
+  AssetGenImage get imgBg => const AssetGenImage('assets/images/img_bg.png');
 
-  /// File path: assets/images/ic_contact_us.png
-  AssetGenImage get icContactUs => const AssetGenImage('assets/images/ic_contact_us.png');
+  /// File path: assets/images/img_bg_mobile.png
+  AssetGenImage get imgBgMobile => const AssetGenImage('assets/images/img_bg_mobile.png');
 
-  /// File path: assets/images/ic_creator_ellipse.png
-  AssetGenImage get icCreatorEllipse => const AssetGenImage('assets/images/ic_creator_ellipse.png');
+  /// File path: assets/images/img_contact_us.png
+  AssetGenImage get imgContactUs => const AssetGenImage('assets/images/img_contact_us.png');
 
-  /// File path: assets/images/ic_creator_icon.png
-  AssetGenImage get icCreatorIcon => const AssetGenImage('assets/images/ic_creator_icon.png');
+  /// File path: assets/images/img_creator_ellipse.png
+  AssetGenImage get imgCreatorEllipse => const AssetGenImage('assets/images/img_creator_ellipse.png');
 
-  /// File path: assets/images/ic_holder_ellipse.png
-  AssetGenImage get icHolderEllipse => const AssetGenImage('assets/images/ic_holder_ellipse.png');
+  /// File path: assets/images/img_creator_icon.png
+  AssetGenImage get imgCreatorIcon => const AssetGenImage('assets/images/img_creator_icon.png');
 
-  /// File path: assets/images/ic_holder_icon.png
-  AssetGenImage get icHolderIcon => const AssetGenImage('assets/images/ic_holder_icon.png');
+  /// File path: assets/images/img_holder_ellipse.png
+  AssetGenImage get imgHolderEllipse => const AssetGenImage('assets/images/img_holder_ellipse.png');
 
-  /// File path: assets/images/ic_logo.png
-  AssetGenImage get icLogo => const AssetGenImage('assets/images/ic_logo.png');
+  /// File path: assets/images/img_holder_icon.png
+  AssetGenImage get imgHolderIcon => const AssetGenImage('assets/images/img_holder_icon.png');
 
-  /// File path: assets/images/ic_logo_main.png
-  AssetGenImage get icLogoMain => const AssetGenImage('assets/images/ic_logo_main.png');
+  /// File path: assets/images/img_logo.png
+  AssetGenImage get imgLogo => const AssetGenImage('assets/images/img_logo.png');
 
-  /// File path: assets/images/ic_menu_mobile.png
-  AssetGenImage get icMenuMobile => const AssetGenImage('assets/images/ic_menu_mobile.png');
+  /// File path: assets/images/img_logo_main.png
+  AssetGenImage get imgLogoMain => const AssetGenImage('assets/images/img_logo_main.png');
 
-  /// File path: assets/images/ic_mobile_arc.png
-  AssetGenImage get icMobileArc => const AssetGenImage('assets/images/ic_mobile_arc.png');
+  /// File path: assets/images/img_menu_mobile.png
+  AssetGenImage get imgMenuMobile => const AssetGenImage('assets/images/img_menu_mobile.png');
 
-  /// File path: assets/images/ic_mobile_home.png
-  AssetGenImage get icMobileHome => const AssetGenImage('assets/images/ic_mobile_home.png');
+  /// File path: assets/images/img_mobile_arc.png
+  AssetGenImage get imgMobileArc => const AssetGenImage('assets/images/img_mobile_arc.png');
 
-  /// File path: assets/images/ic_mobile_white_arc.png
-  AssetGenImage get icMobileWhiteArc => const AssetGenImage('assets/images/ic_mobile_white_arc.png');
+  /// File path: assets/images/img_mobile_home.png
+  AssetGenImage get imgMobileHome => const AssetGenImage('assets/images/img_mobile_home.png');
 
-  /// File path: assets/images/ic_token_coming.png
-  AssetGenImage get icTokenComing => const AssetGenImage('assets/images/ic_token_coming.png');
+  /// File path: assets/images/img_mobile_white_arc.png
+  AssetGenImage get imgMobileWhiteArc => const AssetGenImage('assets/images/img_mobile_white_arc.png');
 
-  /// File path: assets/images/ic_web_arc.png
-  AssetGenImage get icWebArc => const AssetGenImage('assets/images/ic_web_arc.png');
+  /// File path: assets/images/img_token_coming.png
+  AssetGenImage get imgTokenComing => const AssetGenImage('assets/images/img_token_coming.png');
 
-  /// File path: assets/images/ic_web_fotter.png
-  AssetGenImage get icWebFotter => const AssetGenImage('assets/images/ic_web_fotter.png');
+  /// File path: assets/images/img_web_arc.png
+  AssetGenImage get imgWebArc => const AssetGenImage('assets/images/img_web_arc.png');
 
-  /// File path: assets/images/ic_web_home.png
-  AssetGenImage get icWebHome => const AssetGenImage('assets/images/ic_web_home.png');
+  /// File path: assets/images/img_web_fotter.png
+  AssetGenImage get imgWebFotter => const AssetGenImage('assets/images/img_web_fotter.png');
 
-  /// File path: assets/images/ic_web_white_arc.png
-  AssetGenImage get icWebWhiteArc => const AssetGenImage('assets/images/ic_web_white_arc.png');
+  /// File path: assets/images/img_web_home.png
+  AssetGenImage get imgWebHome => const AssetGenImage('assets/images/img_web_home.png');
+
+  /// File path: assets/images/img_web_white_arc.png
+  AssetGenImage get imgWebWhiteArc => const AssetGenImage('assets/images/img_web_white_arc.png');
+
+  /// File path: assets/images/mobile_presale.png
+  AssetGenImage get mobilePresale => const AssetGenImage('assets/images/mobile_presale.png');
+
+  /// File path: assets/images/phase_one.png
+  AssetGenImage get phaseOne => const AssetGenImage('assets/images/phase_one.png');
+
+  /// File path: assets/images/phase_three.png
+  AssetGenImage get phaseThree => const AssetGenImage('assets/images/phase_three.png');
+
+  /// File path: assets/images/phase_two.png
+  AssetGenImage get phaseTwo => const AssetGenImage('assets/images/phase_two.png');
 
   /// List of all assets
   List<AssetGenImage> get values => [
-        icBg,
-        icBgMobile,
-        icContactUs,
-        icCreatorEllipse,
-        icCreatorIcon,
-        icHolderEllipse,
-        icHolderIcon,
-        icLogo,
-        icLogoMain,
-        icMenuMobile,
-        icMobileArc,
-        icMobileHome,
-        icMobileWhiteArc,
-        icTokenComing,
-        icWebArc,
-        icWebFotter,
-        icWebHome,
-        icWebWhiteArc
+        desktopPresale,
+        imgBg,
+        imgBgMobile,
+        imgContactUs,
+        imgCreatorEllipse,
+        imgCreatorIcon,
+        imgHolderEllipse,
+        imgHolderIcon,
+        imgLogo,
+        imgLogoMain,
+        imgMenuMobile,
+        imgMobileArc,
+        imgMobileHome,
+        imgMobileWhiteArc,
+        imgTokenComing,
+        imgWebArc,
+        imgWebFotter,
+        imgWebHome,
+        imgWebWhiteArc,
+        mobilePresale,
+        phaseOne,
+        phaseThree,
+        phaseTwo
       ];
 }
 

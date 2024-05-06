@@ -17,6 +17,7 @@ final _privateConstructorUsedError = UnsupportedError(
 /// @nodoc
 mixin _$HomePageState {
   bool get isExpanded => throw _privateConstructorUsedError;
+  int get presaleIndex => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $HomePageStateCopyWith<HomePageState> get copyWith =>
@@ -29,7 +30,7 @@ abstract class $HomePageStateCopyWith<$Res> {
           HomePageState value, $Res Function(HomePageState) then) =
       _$HomePageStateCopyWithImpl<$Res, HomePageState>;
   @useResult
-  $Res call({bool isExpanded});
+  $Res call({bool isExpanded, int presaleIndex});
 }
 
 /// @nodoc
@@ -46,12 +47,17 @@ class _$HomePageStateCopyWithImpl<$Res, $Val extends HomePageState>
   @override
   $Res call({
     Object? isExpanded = null,
+    Object? presaleIndex = null,
   }) {
     return _then(_value.copyWith(
       isExpanded: null == isExpanded
           ? _value.isExpanded
           : isExpanded // ignore: cast_nullable_to_non_nullable
               as bool,
+      presaleIndex: null == presaleIndex
+          ? _value.presaleIndex
+          : presaleIndex // ignore: cast_nullable_to_non_nullable
+              as int,
     ) as $Val);
   }
 }
@@ -64,7 +70,7 @@ abstract class _$$HomePageStateImplCopyWith<$Res>
       __$$HomePageStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({bool isExpanded});
+  $Res call({bool isExpanded, int presaleIndex});
 }
 
 /// @nodoc
@@ -79,12 +85,17 @@ class __$$HomePageStateImplCopyWithImpl<$Res>
   @override
   $Res call({
     Object? isExpanded = null,
+    Object? presaleIndex = null,
   }) {
     return _then(_$HomePageStateImpl(
       isExpanded: null == isExpanded
           ? _value.isExpanded
           : isExpanded // ignore: cast_nullable_to_non_nullable
               as bool,
+      presaleIndex: null == presaleIndex
+          ? _value.presaleIndex
+          : presaleIndex // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
@@ -92,15 +103,18 @@ class __$$HomePageStateImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$HomePageStateImpl implements _HomePageState {
-  const _$HomePageStateImpl({this.isExpanded = false});
+  const _$HomePageStateImpl({this.isExpanded = false, this.presaleIndex = 1});
 
   @override
   @JsonKey()
   final bool isExpanded;
+  @override
+  @JsonKey()
+  final int presaleIndex;
 
   @override
   String toString() {
-    return 'HomePageState(isExpanded: $isExpanded)';
+    return 'HomePageState(isExpanded: $isExpanded, presaleIndex: $presaleIndex)';
   }
 
   @override
@@ -109,11 +123,13 @@ class _$HomePageStateImpl implements _HomePageState {
         (other.runtimeType == runtimeType &&
             other is _$HomePageStateImpl &&
             (identical(other.isExpanded, isExpanded) ||
-                other.isExpanded == isExpanded));
+                other.isExpanded == isExpanded) &&
+            (identical(other.presaleIndex, presaleIndex) ||
+                other.presaleIndex == presaleIndex));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, isExpanded);
+  int get hashCode => Object.hash(runtimeType, isExpanded, presaleIndex);
 
   @JsonKey(ignore: true)
   @override
@@ -123,10 +139,13 @@ class _$HomePageStateImpl implements _HomePageState {
 }
 
 abstract class _HomePageState implements HomePageState {
-  const factory _HomePageState({final bool isExpanded}) = _$HomePageStateImpl;
+  const factory _HomePageState(
+      {final bool isExpanded, final int presaleIndex}) = _$HomePageStateImpl;
 
   @override
   bool get isExpanded;
+  @override
+  int get presaleIndex;
   @override
   @JsonKey(ignore: true)
   _$$HomePageStateImplCopyWith<_$HomePageStateImpl> get copyWith =>

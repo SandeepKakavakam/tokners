@@ -32,7 +32,7 @@ class _HomeFooterComponentState extends State<HomeFooterComponent> {
           children: [
             Align(
                 alignment: Alignment.bottomRight,
-                child: Assets.images.icWebFotter
+                child: Assets.images.imgWebFotter
                     .image(width: MediaQuery.of(context).size.width, fit: BoxFit.cover)),
             Column(
               children: [
@@ -260,7 +260,7 @@ class _HomeFooterComponentState extends State<HomeFooterComponent> {
                                 child: Icon(
                                   Icons.keyboard_arrow_down_rounded,
                                   size: 22,
-                                  color: index == 0 ? ColorName.buttonColor : ColorName.mentorColor,
+                                  color: index == 0 ? ColorName.buttonColor : ColorName.colorFFD100,
                                 )),
                             const SizedBox(
                               height: 150,
@@ -332,8 +332,8 @@ class _HomeFooterComponentState extends State<HomeFooterComponent> {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Assets.images.icLogo.image(height: 30, fit: BoxFit.fitHeight),
-              Assets.images.icContactUs.image(height: 30, fit: BoxFit.fitHeight),
+              Assets.images.imgLogo.image(height: 30, fit: BoxFit.fitHeight),
+              Assets.images.imgContactUs.image(height: 30, fit: BoxFit.fitHeight),
               Text(
                 text.footer_cp,
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
@@ -349,13 +349,13 @@ class _HomeFooterComponentState extends State<HomeFooterComponent> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Assets.images.icLogo.image(height: 30, fit: BoxFit.fitHeight),
+              Assets.images.imgLogo.image(height: 30, fit: BoxFit.fitHeight),
               const SizedBox(
-                height: 20,
+                height: 40,
               ),
-              Assets.images.icContactUs.image(height: 30, fit: BoxFit.fitHeight),
+              Assets.images.imgContactUs.image(height: 60, width: 400, fit: BoxFit.fill),
               const SizedBox(
-                height: 20,
+                height: 40,
               ),
               Text(
                 text.footer_cp,

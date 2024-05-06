@@ -11,9 +11,14 @@ import 'homepage_state.dart';
 class HomePageBloc extends BaseBloc<HomePageEvent, HomePageState> {
   HomePageBloc() : super(const HomePageState()){
     on<IsExpanded>(onIsExpanded);
+    on<PresaleIndexChanged>(_onPresaleIndexChanged);
   }
 
   void onIsExpanded(IsExpanded event, Emitter<HomePageState> emit){
     emit(state.copyWith(isExpanded: !state.isExpanded));
+  }
+
+  void _onPresaleIndexChanged(PresaleIndexChanged event, Emitter<HomePageState> emit){
+    emit(state.copyWith(presaleIndex: event.index));
   }
 }
