@@ -8,5 +8,10 @@
     <color name="gray_shade">#DDE2FF</color>
     <color name="mentor_color">#2278D4</color>
     <color name="container_color">#171B29</color>
+    <color name="color_2278D4">#2278D4</color>
+    <color name="color_FFD100">#FFD100</color>
+    <color name="color_E20613">#E20613</color>
+    <color name="color_9FA1A6">#9FA1A6</color>
+    <color name="color_171B29">#171B29</color>
 
 </resources>

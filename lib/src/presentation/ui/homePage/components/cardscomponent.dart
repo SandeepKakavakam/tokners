@@ -1,5 +1,4 @@
 import 'package:data/data.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:tokner/app.dart';
@@ -36,7 +35,7 @@ class _HomeCardsComponentState extends State<HomeCardsComponent> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            cardsData(widget.deviceType),
+            cards(widget.deviceType),
             const SizedBox(
               height: 60,
             ),
@@ -54,7 +53,7 @@ class _HomeCardsComponentState extends State<HomeCardsComponent> {
             SizedBox(
                 height: MediaQuery.of(context).size.height * 0.65,
                 width: double.infinity,
-                child: cardsData(widget.deviceType)),
+                child: cards(widget.deviceType)),
             const SizedBox(
               height: 50,
             ),
@@ -74,7 +73,7 @@ class _HomeCardsComponentState extends State<HomeCardsComponent> {
     );
   }
 
-  Widget cardsData(DeviceScreenType deviceType) {
+  Widget cards(DeviceScreenType deviceType) {
     return Padding(
       padding: EdgeInsets.only(left: deviceType == DeviceScreenType.desktop ? 175 : 23),
       child: ListView.builder(

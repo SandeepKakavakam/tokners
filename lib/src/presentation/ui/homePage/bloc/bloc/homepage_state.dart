@@ -4,6 +4,8 @@ import '../../../../base/bloc/base_bloc_state.dart';
 part 'homepage_state.freezed.dart';
 @freezed
 class HomePageState extends BaseBlocState with _$HomePageState {
-  const factory HomePageState() = _HomePageState;
+  const factory HomePageState({
+    @Default(false) bool isExpanded,
+  }) = _HomePageState;
 }
 

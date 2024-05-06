@@ -18,6 +18,9 @@ class $AssetsImagesGen {
   /// File path: assets/images/ic_bg_mobile.png
   AssetGenImage get icBgMobile => const AssetGenImage('assets/images/ic_bg_mobile.png');
 
+  /// File path: assets/images/ic_contact_us.png
+  AssetGenImage get icContactUs => const AssetGenImage('assets/images/ic_contact_us.png');
+
   /// File path: assets/images/ic_creator_ellipse.png
   AssetGenImage get icCreatorEllipse => const AssetGenImage('assets/images/ic_creator_ellipse.png');
 
@@ -48,11 +51,14 @@ class $AssetsImagesGen {
   /// File path: assets/images/ic_mobile_white_arc.png
   AssetGenImage get icMobileWhiteArc => const AssetGenImage('assets/images/ic_mobile_white_arc.png');
 
-  /// File path: assets/images/ic_rectangle.png
-  AssetGenImage get icRectangle => const AssetGenImage('assets/images/ic_rectangle.png');
+  /// File path: assets/images/ic_token_coming.png
+  AssetGenImage get icTokenComing => const AssetGenImage('assets/images/ic_token_coming.png');
 
   /// File path: assets/images/ic_web_arc.png
   AssetGenImage get icWebArc => const AssetGenImage('assets/images/ic_web_arc.png');
+
+  /// File path: assets/images/ic_web_fotter.png
+  AssetGenImage get icWebFotter => const AssetGenImage('assets/images/ic_web_fotter.png');
 
   /// File path: assets/images/ic_web_home.png
   AssetGenImage get icWebHome => const AssetGenImage('assets/images/ic_web_home.png');
@@ -64,6 +70,7 @@ class $AssetsImagesGen {
   List<AssetGenImage> get values => [
         icBg,
         icBgMobile,
+        icContactUs,
         icCreatorEllipse,
         icCreatorIcon,
         icHolderEllipse,
@@ -74,8 +81,9 @@ class $AssetsImagesGen {
         icMobileArc,
         icMobileHome,
         icMobileWhiteArc,
-        icRectangle,
+        icTokenComing,
         icWebArc,
+        icWebFotter,
         icWebHome,
         icWebWhiteArc
       ];
