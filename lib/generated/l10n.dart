@@ -220,21 +220,31 @@ class LanguageTranslation {
     );
   }
 
-  /// `Creators can gain independence through a decentralised digital currency system that is dependent on growing and engaging with the community and also their star power. They own 10-15% of the total value of the tokens minted.`
-  String get creator_text {
+  /// `What makes us different?\n\n`
+  String get white_container_question {
     return Intl.message(
-      'Creators can gain independence through a decentralised digital currency system that is dependent on growing and engaging with the community and also their star power. They own 10-15% of the total value of the tokens minted.',
-      name: 'creator_text',
+      'What makes us different?\n\n',
+      name: 'white_container_question',
       desc: '',
       args: [],
     );
   }
 
-  /// `Holding social tokens allows the individual to gain access to benefits including unreleased content, private communities, direct access to celebrity, early- access to tickets and more as well as the ability to trade with other communities in order to gain access to more creator content with early token buyers being the biggest winners as the value of the token increases with more buyers.`
-  String get holder_text {
+  /// `We would only launch tokens with the express permission of the creators.\n\n`
+  String get white_container_main_answer {
     return Intl.message(
-      'Holding social tokens allows the individual to gain access to benefits including unreleased content, private communities, direct access to celebrity, early- access to tickets and more as well as the ability to trade with other communities in order to gain access to more creator content with early token buyers being the biggest winners as the value of the token increases with more buyers.',
-      name: 'holder_text',
+      'We would only launch tokens with the express permission of the creators.\n\n',
+      name: 'white_container_main_answer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `There are several thousand celebrities and creators on twitter, tiktok, Instagram and YouTube with followings in the millions who we would be actively engaging before we go viral.\n\nWe would get them on our platform and they would see the opportunity to create a fan driven digital economy where their digital content can be traded as NFTs and their most loyal fans can have the monetary value of their creator's currency increase significantly as they promote their digital currency across their channels while our native token holders benefit from the Weentar popularity.`
+  String get white_container_answer {
+    return Intl.message(
+      'There are several thousand celebrities and creators on twitter, tiktok, Instagram and YouTube with followings in the millions who we would be actively engaging before we go viral.\n\nWe would get them on our platform and they would see the opportunity to create a fan driven digital economy where their digital content can be traded as NFTs and their most loyal fans can have the monetary value of their creator\'s currency increase significantly as they promote their digital currency across their channels while our native token holders benefit from the Weentar popularity.',
+      name: 'white_container_answer',
       desc: '',
       args: [],
     );

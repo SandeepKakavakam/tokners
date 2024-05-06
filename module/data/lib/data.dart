@@ -8,3 +8,4 @@ export 'src/model/dialog/message_dialog_model.dart';
 
 
 ///model files
+export 'src/model/home/cards_model.dart';

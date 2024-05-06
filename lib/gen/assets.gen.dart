@@ -48,6 +48,9 @@ class $AssetsImagesGen {
   /// File path: assets/images/ic_mobile_white_arc.png
   AssetGenImage get icMobileWhiteArc => const AssetGenImage('assets/images/ic_mobile_white_arc.png');
 
+  /// File path: assets/images/ic_rectangle.png
+  AssetGenImage get icRectangle => const AssetGenImage('assets/images/ic_rectangle.png');
+
   /// File path: assets/images/ic_web_arc.png
   AssetGenImage get icWebArc => const AssetGenImage('assets/images/ic_web_arc.png');
 
@@ -71,6 +74,7 @@ class $AssetsImagesGen {
         icMobileArc,
         icMobileHome,
         icMobileWhiteArc,
+        icRectangle,
         icWebArc,
         icWebHome,
         icWebWhiteArc

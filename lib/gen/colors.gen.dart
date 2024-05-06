@@ -19,6 +19,9 @@ class ColorName {
   /// Color: #22A75D
   static const Color buttonColor = Color(0xFF22A75D);
 
+  /// Color: #171B29
+  static const Color containerColor = Color(0xFF171B29);
+
   /// Color: #2B3087
   static const Color gradientTextShade1 = Color(0xFF2B3087);
 
@@ -27,6 +30,9 @@ class ColorName {
 
   /// Color: #DDE2FF
   static const Color grayShade = Color(0xFFDDE2FF);
+
+  /// Color: #2278D4
+  static const Color mentorColor = Color(0xFF2278D4);
 
   /// Color: #FFFFFF
   static const Color white = Color(0xFFFFFFFF);

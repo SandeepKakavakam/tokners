@@ -26,7 +26,7 @@ class _HeadComponentState extends State<HeadComponent> {
             Stack(
               children: [
                 Align(
-                  alignment: Alignment.topLeft,
+                  alignment: Alignment.topCenter,
                   child: Assets.images.icBgMobile.image(
                       height: 150, width: MediaQuery.of(context).size.width, fit: BoxFit.cover),
                 ),
@@ -86,7 +86,7 @@ class _HeadComponentState extends State<HeadComponent> {
         return Stack(
           children: [
             Align(
-                alignment: Alignment.centerRight,
+                alignment: Alignment.topRight,
                 child: Assets.images.icBg
                     .image(width: MediaQuery.of(context).size.width, fit: BoxFit.cover)),
             Column(
