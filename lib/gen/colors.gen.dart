@@ -20,25 +20,10 @@ class ColorName {
   static const Color buttonColor = Color(0xFF22A75D);
 
   /// Color: #171B29
-  static const Color color171B29 = Color(0xFF171B29);
-
-  /// Color: #191B21
-  static const Color color191B21 = Color(0xFF191B21);
-
-  /// Color: #2278D4
-  static const Color color2278D4 = Color(0xFF2278D4);
+  static const Color containerColor = Color(0xFF171B29);
 
   /// Color: #9FA1A6
-  static const Color color9FA1A6 = Color(0xFF9FA1A6);
-
-  /// Color: #E20613
-  static const Color colorE20613 = Color(0xFFE20613);
-
-  /// Color: #FFD100
-  static const Color colorFFD100 = Color(0xFFFFD100);
-
-  /// Color: #171B29
-  static const Color containerColor = Color(0xFF171B29);
+  static const Color descriptionTextColor = Color(0xFF9FA1A6);
 
   /// Color: #2B3087
   static const Color gradientTextShade1 = Color(0xFF2B3087);
@@ -52,6 +37,18 @@ class ColorName {
   /// Color: #2278D4
   static const Color mentorColor = Color(0xFF2278D4);
 
+  /// Color: #191B21
+  static const Color phaseTextColor = Color(0xFF191B21);
+
+  /// Color: #E20613
+  static const Color red = Color(0xFFE20613);
+
+  /// Color: #2278D4
+  static const Color skyBlue = Color(0xFF2278D4);
+
   /// Color: #FFFFFF
   static const Color white = Color(0xFFFFFFFF);
+
+  /// Color: #FFD100
+  static const Color yellow = Color(0xFFFFD100);
 }

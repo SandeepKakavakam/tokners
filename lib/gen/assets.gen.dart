@@ -12,9 +12,6 @@ import 'package:flutter/widgets.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
-  /// File path: assets/images/desktop_presale.png
-  AssetGenImage get desktopPresale => const AssetGenImage('assets/images/desktop_presale.png');
-
   /// File path: assets/images/img_bg.png
   AssetGenImage get imgBg => const AssetGenImage('assets/images/img_bg.png');
 
@@ -51,11 +48,23 @@ class $AssetsImagesGen {
   /// File path: assets/images/img_mobile_home.png
   AssetGenImage get imgMobileHome => const AssetGenImage('assets/images/img_mobile_home.png');
 
+  /// File path: assets/images/img_mobile_presale.png
+  AssetGenImage get imgMobilePresale => const AssetGenImage('assets/images/img_mobile_presale.png');
+
   /// File path: assets/images/img_mobile_white_arc.png
   AssetGenImage get imgMobileWhiteArc => const AssetGenImage('assets/images/img_mobile_white_arc.png');
 
+  /// File path: assets/images/img_one_text.png
+  AssetGenImage get imgOneText => const AssetGenImage('assets/images/img_one_text.png');
+
+  /// File path: assets/images/img_three_text.png
+  AssetGenImage get imgThreeText => const AssetGenImage('assets/images/img_three_text.png');
+
   /// File path: assets/images/img_token_coming.png
   AssetGenImage get imgTokenComing => const AssetGenImage('assets/images/img_token_coming.png');
+
+  /// File path: assets/images/img_two_text.png
+  AssetGenImage get imgTwoText => const AssetGenImage('assets/images/img_two_text.png');
 
   /// File path: assets/images/img_web_arc.png
   AssetGenImage get imgWebArc => const AssetGenImage('assets/images/img_web_arc.png');
@@ -66,24 +75,14 @@ class $AssetsImagesGen {
   /// File path: assets/images/img_web_home.png
   AssetGenImage get imgWebHome => const AssetGenImage('assets/images/img_web_home.png');
 
+  /// File path: assets/images/img_web_presale.png
+  AssetGenImage get imgWebPresale => const AssetGenImage('assets/images/img_web_presale.png');
+
   /// File path: assets/images/img_web_white_arc.png
   AssetGenImage get imgWebWhiteArc => const AssetGenImage('assets/images/img_web_white_arc.png');
 
-  /// File path: assets/images/mobile_presale.png
-  AssetGenImage get mobilePresale => const AssetGenImage('assets/images/mobile_presale.png');
-
-  /// File path: assets/images/phase_one.png
-  AssetGenImage get phaseOne => const AssetGenImage('assets/images/phase_one.png');
-
-  /// File path: assets/images/phase_three.png
-  AssetGenImage get phaseThree => const AssetGenImage('assets/images/phase_three.png');
-
-  /// File path: assets/images/phase_two.png
-  AssetGenImage get phaseTwo => const AssetGenImage('assets/images/phase_two.png');
-
   /// List of all assets
   List<AssetGenImage> get values => [
-        desktopPresale,
         imgBg,
         imgBgMobile,
         imgContactUs,
@@ -96,16 +95,17 @@ class $AssetsImagesGen {
         imgMenuMobile,
         imgMobileArc,
         imgMobileHome,
+        imgMobilePresale,
         imgMobileWhiteArc,
+        imgOneText,
+        imgThreeText,
         imgTokenComing,
+        imgTwoText,
         imgWebArc,
         imgWebFotter,
         imgWebHome,
-        imgWebWhiteArc,
-        mobilePresale,
-        phaseOne,
-        phaseThree,
-        phaseTwo
+        imgWebPresale,
+        imgWebWhiteArc
       ];
 }
 

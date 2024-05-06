@@ -38,7 +38,7 @@ class _HomeToknerComponentState extends BasePageState<HomeToknerComponent, HomeP
                     height: MediaQuery.of(context).size.width * 0.7,
                     width: MediaQuery.of(context).size.width * 0.8,
                     decoration: BoxDecoration(
-                        color: ColorName.color171B29, borderRadius: BorderRadius.circular(12)),
+                        color: ColorName.containerColor, borderRadius: BorderRadius.circular(12)),
                   ),
                 ),
                 Assets.images.imgTokenComing.image(
@@ -78,7 +78,7 @@ class _HomeToknerComponentState extends BasePageState<HomeToknerComponent, HomeP
                             height: MediaQuery.of(context).size.width * 0.7,
                             width: MediaQuery.of(context).size.width * 0.4,
                             decoration: BoxDecoration(
-                                color: ColorName.color171B29,
+                                color: ColorName.containerColor,
                                 borderRadius: BorderRadius.circular(12)),
                           ),
                         ),
@@ -113,7 +113,7 @@ class _HomeToknerComponentState extends BasePageState<HomeToknerComponent, HomeP
             ' Influencer agency partnerships',
             'Marketing and promotion '
           ],
-          color: ColorName.color2278D4),
+          color: ColorName.skyBlue),
       ToknerComingModel(
           title: 'Q3',
           description: [
@@ -121,7 +121,7 @@ class _HomeToknerComponentState extends BasePageState<HomeToknerComponent, HomeP
             'Expansion of creator communities on our platform',
             'More Marketing and promotion'
           ],
-          color: ColorName.colorFFD100),
+          color: ColorName.yellow),
       ToknerComingModel(
           title: 'Q4',
           description: [
@@ -130,7 +130,7 @@ class _HomeToknerComponentState extends BasePageState<HomeToknerComponent, HomeP
             '2Million active community members',
             'More Marketing and promotion'
           ],
-          color: ColorName.colorE20613),
+          color: ColorName.red),
     ];
     return Padding(
       padding: EdgeInsets.symmetric(
@@ -307,14 +307,14 @@ class _HomeToknerComponentState extends BasePageState<HomeToknerComponent, HomeP
                   children: [
                     Text(LanguageTranslation.current.description_3,
                         style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: ColorName.color9FA1A6,
+                            color: ColorName.descriptionTextColor,
                             fontFamily: FontFamily.gothic,
                             fontSize: 14,
                             fontWeight: FontWeight.w900,
                             height: 1.5)),
                     Text(LanguageTranslation.current.description_4,
                         style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: ColorName.color9FA1A6,
+                            color: ColorName.descriptionTextColor,
                             fontFamily: FontFamily.gothic,
                             fontSize: 14,
                             fontWeight: FontWeight.w400,
@@ -325,7 +325,7 @@ class _HomeToknerComponentState extends BasePageState<HomeToknerComponent, HomeP
                         Text(
                           '''"''',
                           style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                              color: ColorName.colorFFD100,
+                              color: ColorName.descriptionTextColor,
                               fontFamily: FontFamily.gothic,
                               fontSize: 22,
                               fontWeight: FontWeight.w900,
@@ -338,7 +338,7 @@ class _HomeToknerComponentState extends BasePageState<HomeToknerComponent, HomeP
                                 : MediaQuery.of(context).size.width * 0.25,
                             child: Text(LanguageTranslation.current.description_5,
                                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                    color: ColorName.color9FA1A6,
+                                    color: ColorName.descriptionTextColor,
                                     fontFamily: FontFamily.gothic,
                                     fontSize: 14,
                                     fontWeight: FontWeight.w700,
@@ -347,7 +347,7 @@ class _HomeToknerComponentState extends BasePageState<HomeToknerComponent, HomeP
                     ),
                     Text(LanguageTranslation.current.description_6,
                         style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: ColorName.color9FA1A6,
+                            color: ColorName.descriptionTextColor,
                             fontFamily: FontFamily.gothic,
                             fontSize: 14,
                             fontWeight: FontWeight.w400,

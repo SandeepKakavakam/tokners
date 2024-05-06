@@ -32,22 +32,22 @@ class _PresaleDetailsState extends BasePageState<PresaleDetails, HomePageBloc> {
       PresaleDetailsModel(
           phase: "Two",
           duration: "0/04/2021 - 16/04/2021",
-          color: ColorName.color2278D4,
+          color: ColorName.skyBlue,
           bnbValue: 100000,
           softCap: 5000,
           hardCap: 10000),
       PresaleDetailsModel(
           phase: "Three",
           duration: "0/04/2021 - 16/04/2021",
-          color: ColorName.colorFFD100,
+          color: ColorName.yellow,
           bnbValue: 100000,
           softCap: 5000,
           hardCap: 10000),
     ];
     List<Image> imageData = [
-      Assets.images.phaseOne.image(),
-      Assets.images.phaseTwo.image(),
-      Assets.images.phaseThree.image(),
+      Assets.images.imgOneText.image(),
+      Assets.images.imgTwoText.image(),
+      Assets.images.imgThreeText.image(),
     ];
     DeviceScreenType deviceType = getDeviceType(MediaQuery.of(context).size);
     return ScreenTypeLayout.builder(
@@ -55,7 +55,7 @@ class _PresaleDetailsState extends BasePageState<PresaleDetails, HomePageBloc> {
         return Stack(
           alignment: Alignment.bottomCenter,
           children: [
-            Assets.images.desktopPresale.image(),
+            Assets.images.imgWebPresale.image(),
             Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -73,7 +73,7 @@ class _PresaleDetailsState extends BasePageState<PresaleDetails, HomePageBloc> {
             alignment: Alignment.center,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage(Assets.images.mobilePresale.path),
+                image: AssetImage(Assets.images.imgMobilePresale.path),
                 fit: BoxFit.fill,
               ),
             ),
@@ -228,7 +228,7 @@ class _PresaleDetailsState extends BasePageState<PresaleDetails, HomePageBloc> {
                 fontFamily: FontFamily.gothic,
                 fontWeight: FontWeight.w700,
                 fontSize: 32,
-                color: ColorName.color191B21,
+                color: ColorName.phaseTextColor,
               ),
             ),
             SizedBox(
@@ -240,7 +240,7 @@ class _PresaleDetailsState extends BasePageState<PresaleDetails, HomePageBloc> {
                 fontWeight: FontWeight.w700,
                 fontFamily: FontFamily.gothic,
                 fontSize: 16,
-                color: ColorName.color191B21,
+                color: ColorName.phaseTextColor,
               ),
             ),
             SizedBox(
@@ -252,7 +252,7 @@ class _PresaleDetailsState extends BasePageState<PresaleDetails, HomePageBloc> {
                 fontWeight: FontWeight.w700,
                 fontFamily: FontFamily.gothic,
                 fontSize: 20,
-                color: ColorName.color191B21,
+                color: ColorName.phaseTextColor,
               ),
             ),
             const SizedBox(
@@ -266,7 +266,7 @@ class _PresaleDetailsState extends BasePageState<PresaleDetails, HomePageBloc> {
                         fontWeight: FontWeight.w400,
                         fontFamily: FontFamily.gothic,
                         fontSize: 16,
-                        color: ColorName.color191B21),
+                        color: ColorName.phaseTextColor),
                     children: [
                       TextSpan(
                         text: "${details[index].softCap.toString()} BNB",
@@ -274,7 +274,7 @@ class _PresaleDetailsState extends BasePageState<PresaleDetails, HomePageBloc> {
                             fontWeight: FontWeight.w600,
                             fontSize: 16,
                             fontFamily: FontFamily.gothic,
-                            color: ColorName.color191B21),
+                            color: ColorName.phaseTextColor),
                       ),
                     ])),
             const SizedBox(
@@ -288,7 +288,7 @@ class _PresaleDetailsState extends BasePageState<PresaleDetails, HomePageBloc> {
                         fontWeight: FontWeight.w400,
                         fontFamily: FontFamily.gothic,
                         fontSize: 16,
-                        color: ColorName.color191B21),
+                        color: ColorName.phaseTextColor),
                     children: [
                       TextSpan(
                         text: "${details[index].hardCap.toString()} BNB",
@@ -296,7 +296,7 @@ class _PresaleDetailsState extends BasePageState<PresaleDetails, HomePageBloc> {
                             fontWeight: FontWeight.w600,
                             fontFamily: FontFamily.gothic,
                             fontSize: 16,
-                            color: ColorName.color191B21),
+                            color: ColorName.phaseTextColor),
                       ),
                     ])),
           ],

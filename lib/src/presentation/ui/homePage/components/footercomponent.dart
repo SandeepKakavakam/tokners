@@ -260,7 +260,7 @@ class _HomeFooterComponentState extends State<HomeFooterComponent> {
                                 child: Icon(
                                   Icons.keyboard_arrow_down_rounded,
                                   size: 22,
-                                  color: index == 0 ? ColorName.buttonColor : ColorName.colorFFD100,
+                                  color: index == 0 ? ColorName.buttonColor : ColorName.yellow,
                                 )),
                             const SizedBox(
                               height: 150,
