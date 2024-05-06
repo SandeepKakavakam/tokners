@@ -20,8 +20,6 @@ class _HeadComponentState extends State<HeadComponent> {
     return ScreenTypeLayout.builder(
       mobile: (context) {
         return Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Stack(
               children: [
@@ -30,19 +28,19 @@ class _HeadComponentState extends State<HeadComponent> {
                   child: Assets.images.imgBgMobile.image(
                       height: 150, width: MediaQuery.of(context).size.width, fit: BoxFit.cover),
                 ),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const SizedBox(
-                      height: 40,
-                    ),
-                    mobileAppBar(appBarText),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 23, top: 56),
-                      child: gradientText(widget.deviceType),
-                    )
-                  ],
+                Padding(
+                  padding: const EdgeInsets.only(left: 23, top: 40),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      mobileAppBar(appBarText),
+                      const SizedBox(
+                        height: 56,
+                      ),
+                      gradientText(widget.deviceType)
+                    ],
+                  ),
                 )
               ],
             ),
@@ -51,31 +49,28 @@ class _HeadComponentState extends State<HeadComponent> {
               children: [
                 Assets.images.imgMobileHome
                     .image(width: MediaQuery.of(context).size.width, fit: BoxFit.cover),
-                Padding(
+                Container(
                   padding: const EdgeInsets.only(left: 23.0, top: 40),
-                  child: Container(
-                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(52), boxShadow: [
-                      BoxShadow(
-                          color: ColorName.buttonColor.withOpacity(0.25),
-                          blurRadius: 25,
-                          offset: const Offset(0, 15))
-                    ]),
-                    child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                            backgroundColor: ColorName.buttonColor,
-                            shape:
-                                RoundedRectangleBorder(borderRadius: BorderRadius.circular(52.0)),
-                            minimumSize: const Size(150, 60)),
-                        onPressed: () {},
-                        child: Text(
-                          text.learn_more,
-                          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                              fontFamily: FontFamily.gothic,
-                              color: ColorName.white,
-                              fontWeight: FontWeight.w400,
-                              fontSize: 14),
-                        )),
-                  ),
+                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(52), boxShadow: [
+                    BoxShadow(
+                        color: ColorName.buttonColor.withOpacity(0.25),
+                        blurRadius: 30,
+                        offset: const Offset(0, 45))
+                  ]),
+                  child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: ColorName.buttonColor,
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(52.0)),
+                          minimumSize: const Size(150, 60)),
+                      onPressed: () {},
+                      child: Text(
+                        text.learn_more,
+                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                            fontFamily: FontFamily.gothic,
+                            color: ColorName.white,
+                            fontWeight: FontWeight.w400,
+                            fontSize: 14),
+                      )),
                 )
               ],
             )
@@ -121,9 +116,6 @@ class _HeadComponentState extends State<HeadComponent> {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const SizedBox(
-            width: 20,
-          ),
           Assets.images.imgLogo.image(height: 25, width: 155),
           const Spacer(),
           MenuAnchor(
@@ -177,37 +169,31 @@ class _HeadComponentState extends State<HeadComponent> {
         const SizedBox(
           width: 40,
         ),
-        Padding(
-          padding: const EdgeInsets.only(top: 10),
-          child: SizedBox(
-            height: 20,
-            width: MediaQuery.of(context).size.width * 0.5,
-            child: ListView.builder(
-              physics: const NeverScrollableScrollPhysics(),
-              itemCount: appBarText.length,
-              scrollDirection: Axis.horizontal,
-              shrinkWrap: true,
-              itemBuilder: (context, index) {
-                return Row(
-                  children: [
-                    InkWell(
-                      onTap: () {},
-                      child: Text(
-                        appBarText[index],
-                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            fontFamily: FontFamily.gothic,
-                            color: ColorName.white,
-                            fontWeight: FontWeight.w700,
-                            letterSpacing: 2),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 20,
-                    )
-                  ],
-                );
-              },
-            ),
+        Container(
+          padding:const EdgeInsets.only(top: 10) ,
+          height: 30,
+          width: MediaQuery.of(context).size.width * 0.5,
+          child: ListView.separated(
+            physics: const NeverScrollableScrollPhysics(),
+            itemCount: appBarText.length,
+            scrollDirection: Axis.horizontal,
+            shrinkWrap: true,
+            itemBuilder: (context, index) {
+              return InkWell(
+                onTap: () {},
+                child: Text(
+                  appBarText[index],
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                      fontFamily: FontFamily.gothic,
+                      color: ColorName.white,
+                      fontWeight: FontWeight.w700,
+                      letterSpacing: 2),
+                ),
+              );},
+              separatorBuilder: (context, index) => const SizedBox(
+                width: 20,
+              ),
+
           ),
         ),
         const Spacer(),
@@ -228,6 +214,7 @@ class _HeadComponentState extends State<HeadComponent> {
         Padding(
           padding: const EdgeInsets.only(top: 10),
           child: OutlinedButton(
+
             onPressed: () {},
             style: OutlinedButton.styleFrom(
                 side: const BorderSide(

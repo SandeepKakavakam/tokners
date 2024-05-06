@@ -66,6 +66,9 @@ class $AssetsImagesGen {
   /// File path: assets/images/img_two_text.png
   AssetGenImage get imgTwoText => const AssetGenImage('assets/images/img_two_text.png');
 
+  /// File path: assets/images/img_vector.png
+  AssetGenImage get imgVector => const AssetGenImage('assets/images/img_vector.png');
+
   /// File path: assets/images/img_web_arc.png
   AssetGenImage get imgWebArc => const AssetGenImage('assets/images/img_web_arc.png');
 
@@ -80,6 +83,9 @@ class $AssetsImagesGen {
 
   /// File path: assets/images/img_web_white_arc.png
   AssetGenImage get imgWebWhiteArc => const AssetGenImage('assets/images/img_web_white_arc.png');
+
+  /// File path: assets/images/img_weentar.png
+  AssetGenImage get imgWeentar => const AssetGenImage('assets/images/img_weentar.png');
 
   /// List of all assets
   List<AssetGenImage> get values => [
@@ -101,11 +107,13 @@ class $AssetsImagesGen {
         imgThreeText,
         imgTokenComing,
         imgTwoText,
+        imgVector,
         imgWebArc,
         imgWebFotter,
         imgWebHome,
         imgWebPresale,
-        imgWebWhiteArc
+        imgWebWhiteArc,
+        imgWeentar
       ];
 }
 

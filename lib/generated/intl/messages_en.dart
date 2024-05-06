@@ -73,6 +73,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "tokner": MessageLookupByLibrary.simpleMessage("Tokners"),
         "tokner_is_coming":
             MessageLookupByLibrary.simpleMessage("Tokner is coming"),
+        "weetnar_text":
+            MessageLookupByLibrary.simpleMessage("Weentar is coming"),
         "white_container_answer": MessageLookupByLibrary.simpleMessage(
             "There are several thousand celebrities and creators on twitter, tiktok, Instagram and YouTube with followings in the millions who we would be actively engaging before we go viral.\n\nWe would get them on our platform and they would see the opportunity to create a fan driven digital economy where their digital content can be traded as NFTs and their most loyal fans can have the monetary value of their creator\'s currency increase significantly as they promote their digital currency across their channels while our native token holders benefit from the Weentar popularity."),
         "white_container_main_answer": MessageLookupByLibrary.simpleMessage(

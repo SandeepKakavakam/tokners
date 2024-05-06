@@ -8,7 +8,6 @@ import 'components/cardscomponent.dart';
 import 'components/comingcomponent.dart';
 import 'components/footercomponent.dart';
 import 'components/headcomponent.dart';
-import 'components/presalecomponet.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -26,14 +25,13 @@ class _HomepageState extends BasePageState<Homepage, HomePageBloc> {
       backgroundColor: ColorName.background,
       body: SingleChildScrollView(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           HeadComponent(deviceType: deviceType),
           HomeCardsComponent(deviceType: deviceType),
           HomeToknerComponent(
             deviceType: deviceType,
           ),
-          const PresaleDetails(),
           HomeFooterComponent(deviceType: deviceType)
         ],
       )),

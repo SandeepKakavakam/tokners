@@ -59,8 +59,10 @@ class _HomeCardsComponentState extends State<HomeCardsComponent> {
             ),
             Row(
               children: [
-                Assets.images.imgWebArc
-                    .image(height: MediaQuery.of(context).size.height*0.9,width: MediaQuery.of(context).size.width * 0.5, fit: BoxFit.fill),
+                Assets.images.imgWebArc.image(
+                    height: MediaQuery.of(context).size.height * 0.9,
+                    width: MediaQuery.of(context).size.width * 0.5,
+                    fit: BoxFit.fill),
                 whiteContainer(widget.deviceType),
                 const SizedBox(
                   height: 50,
@@ -299,7 +301,10 @@ class _HomeCardsComponentState extends State<HomeCardsComponent> {
         color: ColorName.white,
         borderRadius: BorderRadius.only(
             topLeft: Radius.circular(deviceType == DeviceScreenType.desktop ? 300.0 : 0),
-            topRight: Radius.circular(deviceType == DeviceScreenType.mobile || deviceType == DeviceScreenType.tablet ? 300.0 : 0)),
+            topRight: Radius.circular(
+                deviceType == DeviceScreenType.mobile || deviceType == DeviceScreenType.tablet
+                    ? 300.0
+                    : 0)),
       ),
       child: Padding(
         padding: EdgeInsets.only(

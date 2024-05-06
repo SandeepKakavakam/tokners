@@ -419,6 +419,16 @@ class LanguageTranslation {
       args: [],
     );
   }
+
+  /// `Weentar is coming`
+  String get weetnar_text {
+    return Intl.message(
+      'Weentar is coming',
+      name: 'weetnar_text',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate

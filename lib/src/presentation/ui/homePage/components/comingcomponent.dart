@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:tokner/app.dart';
+import 'package:tokner/src/presentation/ui/homePage/components/presalecomponet.dart';
 
 import 'package:tokner/src/presentation/widget/touch_effect.dart';
 
@@ -49,50 +50,69 @@ class _HomeToknerComponentState extends BasePageState<HomeToknerComponent, HomeP
             ),
             const SizedBox(height: 20),
             detailComponent(widget.deviceType),
+            const PresaleDetails()
           ],
         );
       },
       desktop: (context) {
-        return Container(
-          color: ColorName.white,
-          child: Container(
-            decoration: const BoxDecoration(
-                color: ColorName.background,
-                borderRadius: BorderRadius.only(topRight: Radius.circular(180))),
-            child: Column(
-              children: [
-                const SizedBox(
-                  height: 50,
-                ),
-                qComponent(widget.deviceType),
-                Row(
-                  children: [
-                    SizedBox(
-                        width: MediaQuery.of(context).size.width * 0.45,
-                        child: detailComponent(widget.deviceType)),
-                    Stack(
-                      children: [
-                        Positioned(
-                          right: 0,
-                          child: Container(
-                            height: MediaQuery.of(context).size.width * 0.7,
-                            width: MediaQuery.of(context).size.width * 0.4,
-                            decoration: BoxDecoration(
-                                color: ColorName.containerColor,
-                                borderRadius: BorderRadius.circular(12)),
+        return Stack(
+          alignment: Alignment.topRight,
+          children: [
+            Container(
+              decoration: const BoxDecoration(
+                  color: ColorName.background,
+                  borderRadius: BorderRadius.only(topRight: Radius.circular(180))),
+              child: Column(
+                children: [
+                  const SizedBox(
+                    height: 50,
+                  ),
+                  qComponent(widget.deviceType),
+                  Stack(
+                    children: [
+                      Column(
+                        children: [
+                          Row(
+                            children: [
+                              SizedBox(
+                                  width: MediaQuery.of(context).size.width * 0.45,
+                                  child: detailComponent(widget.deviceType)),
+                              Stack(
+                                children: [
+                                  Positioned(
+                                    right: 0,
+                                    child: Container(
+                                      height: MediaQuery.of(context).size.width * 0.7,
+                                      width: MediaQuery.of(context).size.width * 0.4,
+                                      decoration: BoxDecoration(
+                                          color: ColorName.containerColor,
+                                          borderRadius: BorderRadius.circular(12)),
+                                    ),
+                                  ),
+                                  Assets.images.imgTokenComing.image(
+                                      width: MediaQuery.of(context).size.width * 0.5,
+                                      height: MediaQuery.of(context).size.width * 0.7,
+                                      fit: BoxFit.fill),
+                                ],
+                              ),
+                            ],
                           ),
-                        ),
-                        Assets.images.imgTokenComing.image(
-                            width: MediaQuery.of(context).size.width * 0.5,
-                            height: MediaQuery.of(context).size.width * 0.7,
-                            fit: BoxFit.fill),
-                      ],
-                    ),
-                  ],
-                )
-              ],
+                          const SizedBox(
+                            height: 800,
+                          )
+                        ],
+                      ),
+                      const Positioned(
+                        bottom: 0,
+                        child: PresaleDetails(),
+                      )
+                    ],
+                  ),
+                ],
+              ),
             ),
-          ),
+            Assets.images.imgVector.image()
+          ],
         );
       },
     );
@@ -267,14 +287,14 @@ class _HomeToknerComponentState extends BasePageState<HomeToknerComponent, HomeP
             children: [
               Row(
                 children: [
-                  Assets.images.imgLogoMain.image(width: 53, height: 38),
+                  deviceScreenType == DeviceScreenType.mobile? Assets.images.imgWeentar.image(width: 53, height: 38):Assets.images.imgLogoMain.image(width: 53, height: 38),
                   const SizedBox(width: 8),
                   SizedBox(
                     width: deviceScreenType == DeviceScreenType.mobile
                         ? MediaQuery.of(context).size.width * 0.7
                         : MediaQuery.of(context).size.width * 0.22,
                     child: Text(
-                      LanguageTranslation.current.tokner_is_coming,
+                      deviceScreenType == DeviceScreenType.mobile?LanguageTranslation.current.weetnar_text: LanguageTranslation.current.tokner_is_coming,
                       style: Theme.of(context).textTheme.titleLarge?.copyWith(
                           color: ColorName.white,
                           fontFamily: FontFamily.gothic,

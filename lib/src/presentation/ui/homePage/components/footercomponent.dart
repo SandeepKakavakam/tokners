@@ -36,9 +36,12 @@ class _HomeFooterComponentState extends State<HomeFooterComponent> {
                     .image(width: MediaQuery.of(context).size.width, fit: BoxFit.cover)),
             Column(
               children: [
-                buyComponent(widget.deviceType, appBarText),
                 const SizedBox(
                   height: 50,
+                ),
+                buyComponent(widget.deviceType, appBarText),
+                const SizedBox(
+                  height: 30,
                 ),
                 footerComponent(widget.deviceType)
               ],
@@ -82,7 +85,7 @@ class _HomeFooterComponentState extends State<HomeFooterComponent> {
                   SizedBox(
                     height: 400,
                     child: Padding(
-                      padding: const EdgeInsets.only(left: 173),
+                      padding: const EdgeInsets.only(left: 155),
                       child: ListView.builder(
                         itemCount: buyData.length,
                         shrinkWrap: true,

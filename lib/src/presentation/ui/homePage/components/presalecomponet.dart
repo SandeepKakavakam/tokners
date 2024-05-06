@@ -55,12 +55,17 @@ class _PresaleDetailsState extends BasePageState<PresaleDetails, HomePageBloc> {
         return Stack(
           alignment: Alignment.bottomCenter,
           children: [
-            Assets.images.imgWebPresale.image(),
+            ClipRRect(
+              borderRadius:const BorderRadius.only(
+            topRight: Radius.circular(450), bottomLeft: Radius.circular(500,)) ,
+              child: Assets.images.imgWebPresale
+                  .image(width: MediaQuery.of(context).size.width, fit: BoxFit.fill),
+            ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 titleText(fontSize: 48),
-                SizedBox(height: 580, child: buildDetails(details, imageData, deviceType))
+                SizedBox(height: 500, child: buildDetails(details, imageData, deviceType))
               ],
             )
           ],
@@ -166,7 +171,7 @@ class _PresaleDetailsState extends BasePageState<PresaleDetails, HomePageBloc> {
                 : EdgeInsets.only(top: index.isOdd ? 50 : 0, bottom: index.isOdd ? 0 : 50),
             child: Container(
                 alignment: Alignment.center,
-                width: MediaQuery.of(context).size.width * 0.3,
+                width: MediaQuery.of(context).size.width * 0.25,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(25),
                   color: ColorName.white,
