@@ -57,6 +57,9 @@ class $AssetsImagesGen {
   /// File path: assets/images/img_one_text.png
   AssetGenImage get imgOneText => const AssetGenImage('assets/images/img_one_text.png');
 
+  /// File path: assets/images/img_presale_vector.png
+  AssetGenImage get imgPresaleVector => const AssetGenImage('assets/images/img_presale_vector.png');
+
   /// File path: assets/images/img_three_text.png
   AssetGenImage get imgThreeText => const AssetGenImage('assets/images/img_three_text.png');
 
@@ -68,6 +71,9 @@ class $AssetsImagesGen {
 
   /// File path: assets/images/img_vector.png
   AssetGenImage get imgVector => const AssetGenImage('assets/images/img_vector.png');
+
+  /// File path: assets/images/img_vector_presale_top.png
+  AssetGenImage get imgVectorPresaleTop => const AssetGenImage('assets/images/img_vector_presale_top.png');
 
   /// File path: assets/images/img_web_arc.png
   AssetGenImage get imgWebArc => const AssetGenImage('assets/images/img_web_arc.png');
@@ -104,10 +110,12 @@ class $AssetsImagesGen {
         imgMobilePresale,
         imgMobileWhiteArc,
         imgOneText,
+        imgPresaleVector,
         imgThreeText,
         imgTokenComing,
         imgTwoText,
         imgVector,
+        imgVectorPresaleTop,
         imgWebArc,
         imgWebFotter,
         imgWebHome,

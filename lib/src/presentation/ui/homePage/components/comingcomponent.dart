@@ -13,8 +13,8 @@ import '../bloc/bloc/homepage_event.dart';
 import '../bloc/bloc/homepage_state.dart';
 
 class HomeToknerComponent extends StatefulWidget {
-  final DeviceScreenType deviceType;
-  const HomeToknerComponent({super.key, required this.deviceType});
+
+  const HomeToknerComponent({super.key});
 
   @override
   State<HomeToknerComponent> createState() => _HomeToknerComponentState();
@@ -23,6 +23,7 @@ class HomeToknerComponent extends StatefulWidget {
 class _HomeToknerComponentState extends BasePageState<HomeToknerComponent, HomePageBloc> {
   @override
   Widget buildPage(BuildContext context) {
+    DeviceScreenType deviceType = getDeviceType(MediaQuery.of(context).size);
     return ScreenTypeLayout.builder(
       mobile: (context) {
         return Column(
@@ -30,7 +31,7 @@ class _HomeToknerComponentState extends BasePageState<HomeToknerComponent, HomeP
             const SizedBox(
               height: 70,
             ),
-            qComponent(widget.deviceType),
+            qComponent(deviceType),
             Stack(
               children: [
                 Positioned(
@@ -49,7 +50,7 @@ class _HomeToknerComponentState extends BasePageState<HomeToknerComponent, HomeP
               ],
             ),
             const SizedBox(height: 20),
-            detailComponent(widget.deviceType),
+            detailComponent(deviceType),
             const PresaleDetails()
           ],
         );
@@ -65,9 +66,9 @@ class _HomeToknerComponentState extends BasePageState<HomeToknerComponent, HomeP
               child: Column(
                 children: [
                   const SizedBox(
-                    height: 50,
+                    height: 175,
                   ),
-                  qComponent(widget.deviceType),
+                  qComponent(deviceType),
                   Stack(
                     children: [
                       Column(
@@ -76,7 +77,7 @@ class _HomeToknerComponentState extends BasePageState<HomeToknerComponent, HomeP
                             children: [
                               SizedBox(
                                   width: MediaQuery.of(context).size.width * 0.45,
-                                  child: detailComponent(widget.deviceType)),
+                                  child: detailComponent(deviceType)),
                               Stack(
                                 children: [
                                   Positioned(
@@ -91,7 +92,7 @@ class _HomeToknerComponentState extends BasePageState<HomeToknerComponent, HomeP
                                   ),
                                   Assets.images.imgTokenComing.image(
                                       width: MediaQuery.of(context).size.width * 0.5,
-                                      height: MediaQuery.of(context).size.width * 0.7,
+                                      height: MediaQuery.of(context).size.width * 0.5,
                                       fit: BoxFit.fill),
                                 ],
                               ),
@@ -154,7 +155,7 @@ class _HomeToknerComponentState extends BasePageState<HomeToknerComponent, HomeP
     ];
     return Padding(
       padding: EdgeInsets.symmetric(
-          horizontal: deviceScreenType == DeviceScreenType.mobile ? 20 : 155.0),
+          horizontal: deviceScreenType == DeviceScreenType.mobile ? 20 : MediaQuery.of(context).size.width*0.01),
       child: SizedBox(
         height: deviceScreenType == DeviceScreenType.mobile ? 1000 : 400,
         width: deviceScreenType == DeviceScreenType.mobile

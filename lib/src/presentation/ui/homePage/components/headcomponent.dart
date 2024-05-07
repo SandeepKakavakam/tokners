@@ -4,8 +4,8 @@ import 'package:simple_gradient_text/simple_gradient_text.dart';
 import 'package:tokner/app.dart';
 
 class HeadComponent extends StatefulWidget {
-  final DeviceScreenType deviceType;
-  const HeadComponent({super.key, required this.deviceType});
+
+  const HeadComponent({super.key});
 
   @override
   State<HeadComponent> createState() => _HeadComponentState();
@@ -16,6 +16,7 @@ class _HeadComponentState extends State<HeadComponent> {
 
   @override
   Widget build(BuildContext context) {
+    DeviceScreenType deviceType = getDeviceType(MediaQuery.of(context).size);
     List<String> appBarText = [text.our_team, text.tokens, text.connect_wallet, text.lightpaper];
     return ScreenTypeLayout.builder(
       mobile: (context) {
@@ -38,13 +39,13 @@ class _HeadComponentState extends State<HeadComponent> {
                       const SizedBox(
                         height: 56,
                       ),
-                      gradientText(widget.deviceType)
+                      gradientText(deviceType)
                     ],
                   ),
                 )
               ],
             ),
-            mainTextComponent(widget.deviceType),
+            mainTextComponent(deviceType),
             Stack(
               children: [
                 Assets.images.imgMobileHome
@@ -96,7 +97,7 @@ class _HeadComponentState extends State<HeadComponent> {
                   children: [
                     SizedBox(
                         width: MediaQuery.of(context).size.width * 0.45,
-                        child: mainTextComponent(widget.deviceType)),
+                        child: mainTextComponent(deviceType)),
                     Assets.images.imgWebHome.image(
                         width: MediaQuery.of(context).size.width * 0.55,
                         height: 650,

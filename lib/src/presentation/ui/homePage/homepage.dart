@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_builder/responsive_builder.dart';
+
 import 'package:tokner/app.dart';
 
 import '../../base/bloc_page/base_page_state.dart';
@@ -19,20 +19,16 @@ class Homepage extends StatefulWidget {
 class _HomepageState extends BasePageState<Homepage, HomePageBloc> {
   @override
   Widget buildPage(BuildContext context) {
-    var deviceType = getDeviceType(MediaQuery.of(context).size);
-
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: ColorName.background,
       body: SingleChildScrollView(
           child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          HeadComponent(deviceType: deviceType),
-          HomeCardsComponent(deviceType: deviceType),
-          HomeToknerComponent(
-            deviceType: deviceType,
-          ),
-          HomeFooterComponent(deviceType: deviceType)
+          HeadComponent(),
+          HomeCardsComponent(),
+          HomeToknerComponent(),
+          HomeFooterComponent()
         ],
       )),
     );

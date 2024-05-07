@@ -34,9 +34,6 @@ class ColorName {
   /// Color: #DDE2FF
   static const Color grayShade = Color(0xFFDDE2FF);
 
-  /// Color: #2278D4
-  static const Color mentorColor = Color(0xFF2278D4);
-
   /// Color: #191B21
   static const Color phaseTextColor = Color(0xFF191B21);
 

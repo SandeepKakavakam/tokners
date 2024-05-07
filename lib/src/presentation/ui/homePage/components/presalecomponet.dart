@@ -1,9 +1,9 @@
 import 'package:data/data.dart';
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+
 import 'package:tokner/app.dart';
 import 'package:tokner/src/presentation/ui/homePage/bloc/bloc/homepage_bloc.dart';
 import 'package:tokner/src/presentation/ui/homePage/bloc/bloc/homepage_state.dart';
@@ -53,21 +53,23 @@ class _PresaleDetailsState extends BasePageState<PresaleDetails, HomePageBloc> {
     return ScreenTypeLayout.builder(
       desktop: (context) {
         return Stack(
-          alignment: Alignment.bottomCenter,
+
           children: [
-            ClipRRect(
-              borderRadius:const BorderRadius.only(
-            topRight: Radius.circular(450), bottomLeft: Radius.circular(500,)) ,
-              child: Assets.images.imgWebPresale
-                  .image(width: MediaQuery.of(context).size.width, fit: BoxFit.fill),
+
+            Assets.images.imgWebPresale
+                .image(width: MediaQuery.of(context).size.width, fit: BoxFit.fill),
+            Positioned(right:0,top: 200,child: Assets.images.imgVectorPresaleTop.image()),
+            Positioned(left:0,bottom: 200,child: Assets.images.imgPresaleVector.image()),
+            Positioned(top: 300,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  titleText(fontSize: 48),
+                  SizedBox(height: 500, child: buildDetails(details, imageData, deviceType))
+                ],
+              ),
             ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                titleText(fontSize: 48),
-                SizedBox(height: 500, child: buildDetails(details, imageData, deviceType))
-              ],
-            )
+
           ],
         );
       },
@@ -140,19 +142,23 @@ class _PresaleDetailsState extends BasePageState<PresaleDetails, HomePageBloc> {
               const SizedBox(
                 height: 10,
               ),
-              AnimatedSmoothIndicator(
-                  effect: const SlideEffect(
-                    spacing: 8.0,
-                    radius: 10.0,
-                    dotWidth: 8.0,
-                    dotHeight: 8.0,
-                    paintStyle: PaintingStyle.stroke,
-                    strokeWidth: 4,
-                    dotColor: ColorName.white,
-                    activeDotColor: ColorName.white,
-                  ),
-                  activeIndex: state.presaleIndex,
-                  count: details.length)
+              Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: List.generate(details.length, (index) {
+                    return Padding(
+                      padding: const EdgeInsets.only(right:10.0),
+                      child: Container(
+                        height: index == state.presaleIndex ? 8 : 4,
+                        width: index == state.presaleIndex ? 8 : 4,
+                        decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: index == state.presaleIndex ? ColorName.white : Colors.transparent,
+                            border: Border.all(width: 1,color: ColorName.white)
+                        ),
+                      ),
+                    );
+                  })
+              ),
             ],
           );
         });
@@ -171,7 +177,7 @@ class _PresaleDetailsState extends BasePageState<PresaleDetails, HomePageBloc> {
                 : EdgeInsets.only(top: index.isOdd ? 50 : 0, bottom: index.isOdd ? 0 : 50),
             child: Container(
                 alignment: Alignment.center,
-                width: MediaQuery.of(context).size.width * 0.25,
+                width: MediaQuery.of(context).size.width * 0.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(25),
                   color: ColorName.white,
@@ -188,7 +194,7 @@ class _PresaleDetailsState extends BasePageState<PresaleDetails, HomePageBloc> {
   Widget detailsText(
       List<Image> imageData, int index, List<PresaleDetailsModel> details, BuildContext context) {
     return Stack(
-      alignment: Alignment.topCenter,
+      alignment: Alignment.center,
       children: [
         Padding(
           padding: const EdgeInsets.only(top: 50.0),
