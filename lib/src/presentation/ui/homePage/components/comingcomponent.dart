@@ -172,6 +172,7 @@ class _HomeToknerComponentState extends BasePageState<HomeToknerComponent, HomeP
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
+                  crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     Container(
                       height: 82,

@@ -267,7 +267,7 @@ class _HeadComponentState extends State<HeadComponent> {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          deviceType == DeviceScreenType.mobile ? const SizedBox() : gradientText(deviceType),
+          deviceType == DeviceScreenType.mobile || deviceType == DeviceScreenType.tablet ? const SizedBox() : gradientText(deviceType),
           deviceType == DeviceScreenType.mobile
               ? const SizedBox()
               : const SizedBox(
@@ -301,7 +301,7 @@ class _HeadComponentState extends State<HeadComponent> {
               : const SizedBox(
                   height: 40,
                 ),
-          deviceType == DeviceScreenType.mobile
+          deviceType == DeviceScreenType.mobile || deviceType == DeviceScreenType.tablet
               ? const SizedBox()
               : Container(
                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(52), boxShadow: [

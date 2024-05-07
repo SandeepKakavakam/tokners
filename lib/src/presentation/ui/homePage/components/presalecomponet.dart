@@ -58,8 +58,10 @@ class _PresaleDetailsState extends BasePageState<PresaleDetails, HomePageBloc> {
 
             Assets.images.imgWebPresale
                 .image(width: MediaQuery.of(context).size.width, fit: BoxFit.fill),
-            Positioned(right:0,top: 200,child: Assets.images.imgVectorPresaleTop.image()),
-            Positioned(left:0,bottom: 200,child: Assets.images.imgPresaleVector.image()),
+            Positioned(right:0,top: MediaQuery.of(context).size.width*0.14,child: Assets.images.imgVectorPresaleTop.image(
+              height: MediaQuery.of(context).size.width*0.2,width: MediaQuery.of(context).size.width*0.2,fit: BoxFit.fill
+            )),
+            Positioned(left:0,bottom: MediaQuery.of(context).size.width*0.14,child: Assets.images.imgPresaleVector.image(height: MediaQuery.of(context).size.width*0.2,width: MediaQuery.of(context).size.width*0.2,fit: BoxFit.fill)),
             Positioned(top: 300,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
